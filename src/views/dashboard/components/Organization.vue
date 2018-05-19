@@ -1,6 +1,6 @@
 <template>
 <div class="organization">
-  <div id="chartOrgan" style="width:100%; height:800px;"></div>
+  <div id="chartOrgan" style="width:100%; height:960px;"></div>
 </div>
 </template>
 
