@@ -134,11 +134,11 @@ export default {
         levels: getLevelOption(),
         data: [{
           "name": "管理层",
-          "value": "30",
+          "value": "20",
           "discretion": "1",
           "children": [{
             "name": "1067",
-            "value": "20",
+            "value": "10",
             "discretion": "总经理",
           }]
 
@@ -217,7 +217,7 @@ export default {
             "discretion": "人力资源-普通员工"
           }, {
             "name": "1013",
-            "value": "10",
+            "value": "6",
             "discretion": "人力资源部长",
 
           }]
@@ -320,7 +320,7 @@ export default {
             "discretion": "财务-普通员工"
           }, {
             "name": "1041",
-            "value": "10",
+            "value": "6",
             "discretion": "财务部长",
 
           }]
@@ -365,7 +365,7 @@ export default {
                     "discretion": "普通员工1-1"
                   }, {
                     "name": "1087",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-1",
 
                   }]
@@ -396,7 +396,7 @@ export default {
                     "discretion": "普通员工1-2"
                   }, {
                     "name": "1092",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-2",
 
                   }]
@@ -459,7 +459,7 @@ export default {
                     "discretion": "普通员工1-3"
                   }, {
                     "name": "1115",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-3",
 
                   }]
@@ -482,7 +482,7 @@ export default {
                     "discretion": "普通员工1-4"
                   }, {
                     "name": "1125",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-4",
 
                   }]
@@ -541,7 +541,7 @@ export default {
                     "discretion": "普通员工1-5"
                   }, {
                     "name": "1172",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-5",
 
                   }]
@@ -580,7 +580,7 @@ export default {
                     "discretion": "普通员工1-6"
                   }, {
                     "name": "1192",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-6",
 
                   }]
@@ -611,7 +611,7 @@ export default {
                     "discretion": "普通员工1-7"
                   }, {
                     "name": "1199",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-7",
 
                   }]
@@ -694,7 +694,7 @@ export default {
                     "discretion": "普通员工1-8"
                   }, {
                     "name": "1224",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-8",
 
                   }]
@@ -741,14 +741,14 @@ export default {
                     "discretion": "普通员工1-9"
                   }, {
                     "name": "1230",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长1-9",
 
                   }]
                 },
                 {
                   "name": "1007",
-                  "value": "10",
+                  "value": "6",
                   "discretion": "研发1部长",
 
                 }
@@ -791,7 +791,7 @@ export default {
                     "discretion": "普通员工2-1"
                   }, {
                     "name": "1057",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-1",
 
                   }]
@@ -846,7 +846,7 @@ export default {
                     "discretion": "普通员工2-2"
                   }, {
                     "name": "1058",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-2",
 
                   }]
@@ -873,7 +873,7 @@ export default {
                     "discretion": "普通员工2-3"
                   }, {
                     "name": "1079",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-3",
 
                   }]
@@ -924,7 +924,7 @@ export default {
                     "discretion": "普通员工2-4"
                   }, {
                     "name": "1080",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-4",
 
                   }]
@@ -955,7 +955,7 @@ export default {
                     "discretion": "普通员工2-5"
                   }, {
                     "name": "1096",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-5",
 
                   }]
@@ -1006,7 +1006,7 @@ export default {
                     "discretion": "普通员工2-6"
                   }, {
                     "name": "1101",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-6",
 
                   }]
@@ -1057,7 +1057,7 @@ export default {
                     "discretion": "普通员工2-7"
                   }, {
                     "name": "1119",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-7",
 
                   }]
@@ -1112,7 +1112,7 @@ export default {
                     "discretion": "普通员工2-8"
                   }, {
                     "name": "1143",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-8",
 
                   }]
@@ -1167,7 +1167,7 @@ export default {
                     "discretion": "普通员工2-9"
                   }, {
                     "name": "1155",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-9",
 
                   }]
@@ -1210,7 +1210,7 @@ export default {
                     "discretion": "普通员工2-10"
                   }, {
                     "name": "1211",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-10",
 
                   }]
@@ -1254,14 +1254,14 @@ export default {
                     "discretion": "普通员工2-11"
                   }, {
                     "name": "1228",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长2-11",
 
                   }]
                 },
                 {
                   "name": "1059",
-                  "value": "10",
+                  "value": "6",
                   "discretion": "研发2部长",
 
                 }
@@ -1315,7 +1315,7 @@ export default {
                     "discretion": "普通员工3-1"
                   }, {
                     "name": "1060",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-1",
 
                   }]
@@ -1346,7 +1346,7 @@ export default {
                     "discretion": "普通员工3-2"
                   }, {
                     "name": "1098",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-2",
 
                   }]
@@ -1417,7 +1417,7 @@ export default {
                     "discretion": "普通员工3-3"
                   }, {
                     "name": "1100",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-3",
 
                   }]
@@ -1444,7 +1444,7 @@ export default {
                     "discretion": "普通员工3-4"
                   }, {
                     "name": "1154",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-4",
 
                   }]
@@ -1483,7 +1483,7 @@ export default {
                     "discretion": "普通员工3-5"
                   }, {
                     "name": "1191",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-5",
 
                   }]
@@ -1522,7 +1522,7 @@ export default {
                     "discretion": "普通员工3-6"
                   }, {
                     "name": "1207",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-6",
 
 
@@ -1562,14 +1562,14 @@ export default {
                     "discretion": "普通员工3-7"
                   }, {
                     "name": "1209",
-                    "value": "4",
+                    "value": "2",
                     "discretion": "组长3-7",
 
                   }]
                 },
                 {
                   "name": "1068",
-                  "value": "10",
+                  "value": "6",
                   "discretion": "研发3部长",
 
                 }
