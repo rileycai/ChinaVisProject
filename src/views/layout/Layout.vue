@@ -1,6 +1,6 @@
 <template>
-  <div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
-    <sidebar class="sidebar-container"></sidebar>
+  <div class="app-wrapper" :class="{hideSidebar:sidebar.opened}">
+    <sidebar class="sidebar-container" style="height:56px;"></sidebar>
     <div class="main-container">
       <navbar></navbar>
       <app-main></app-main>
@@ -33,6 +33,8 @@ export default {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #f3f3f3;
+  // background-color: #f3f3f3;
+  background-color: rgba(64, 64, 64, 0.5);
+  background-image: url(../../assets/pumpkin.png);
 }
 </style>

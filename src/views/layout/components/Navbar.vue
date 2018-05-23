@@ -2,7 +2,7 @@
   <el-menu class="navbar" mode="horizontal">
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
     <breadcrumb></breadcrumb>
-    <el-dropdown class="avatar-container" trigger="click">
+    <!-- <el-dropdown class="avatar-container" trigger="click">
       <div class="avatar-wrapper">
         <img class="user-avatar" :src="avatar">
         <i class="el-icon-caret-bottom"></i>
@@ -17,7 +17,7 @@
           <span @click="logout" style="display:block;">退出</span>
         </el-dropdown-item>
       </el-dropdown-menu>
-    </el-dropdown>
+    </el-dropdown> -->
   </el-menu>
 </template>
 
@@ -54,6 +54,8 @@ export default {
 .navbar {
   height: 50px;
   line-height: 50px;
+  background-color: rgba(64, 64, 64, 0.5);
+  // background-image: url(../../../assets/pumpkin.png);
   border-radius: 0px !important;
   .hamburger-container {
     line-height: 58px;

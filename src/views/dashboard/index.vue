@@ -1,11 +1,12 @@
 <template>
 <div class="dashboard-container">
   <el-row>
-    <el-col :span="6" >
+    <el-col :span="8" >
       <department></department>
     </el-col>
-    <el-col :span="18" >
-      <employee></employee>
+    <el-col :span="16" >
+      <!-- <employee></employee> -->
+      <emailrel></emailrel>
     </el-col>
   </el-row>
   <el-row>
@@ -18,7 +19,7 @@
 </template>
 
 <script>
-import { Department,Employee,Organization } from '@/views/dashboard/components'
+import { Department,Employee,Organization,Emailrel } from '@/views/dashboard/components'
 import echarts from 'echarts'
 require('echarts/theme/westeros')
 require('echarts/theme/walden')
@@ -28,7 +29,8 @@ export default {
   components: {
     Department,
     Employee,
-    Organization
+    Organization,
+    Emailrel
   },
   data() {
     return {
@@ -46,7 +48,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .dashboard {
     &-container {
-        margin: 10px;
+        margin: 10px 10px 10px -20px;
         height: auto;
 
     }

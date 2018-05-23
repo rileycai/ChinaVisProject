@@ -1,6 +1,6 @@
 <template>
 <div class="organization">
-  <div id="chartOrgan" style="width:100%; height:960px;"></div>
+  <div id="chartOrgan" style="width:100%; height:800px;"></div>
 </div>
 </template>
 
@@ -8,6 +8,7 @@
 import echarts from 'echarts'
 require('echarts/theme/westeros')
 require('echarts/theme/walden')
+require('echarts/theme/halloween')
 
 
 export default {
@@ -85,10 +86,9 @@ export default {
       title: {
         text: '员工组织结构图',
         subtext:'共299名员工，分属财务、人力资源和研发三个部门',
-        left: 'center',
-        top:10
+        x: 'left',
+        padding:[10,10]
       },
-
       tooltip: {
         formatter: function(info) {
           console.log(info);
@@ -1580,7 +1580,7 @@ export default {
       }]
     };
 
-    this.chartOrgan = echarts.init(document.getElementById('chartOrgan'), 'walden')
+    this.chartOrgan = echarts.init(document.getElementById('chartOrgan'), 'halloween')
     this.chartOrgan.setOption(orgOption)
 
   }
@@ -1590,5 +1590,6 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .organization {
     border: #ccc 1px solid;
+    margin-top: 10px;
 }
 </style>

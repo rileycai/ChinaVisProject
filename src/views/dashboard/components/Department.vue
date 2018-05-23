@@ -1,6 +1,6 @@
 <template>
 <div class="department">
-      <div id="chartColumn" style="width:100%; height:500px;"></div>
+      <div id="chartColumn" style="width:100%; height:700px;"></div>
 </div>
 </template>
 
@@ -8,6 +8,7 @@
 import echarts from 'echarts'
 require('echarts/theme/westeros')
 require('echarts/theme/walden')
+require('echarts/theme/halloween')
 
 export default {
   name: 'Department',
@@ -31,9 +32,6 @@ export default {
           type: 'sunburst',
           // highlightPolicy: 'ancestor',
           data: [{
-            name: 'HighTech',
-            value: 299,
-            children: [{
               name: '研发',
               value: 256,
               children: [{
@@ -144,26 +142,26 @@ export default {
               name: '财务',
               value: 24
             }]
-          }],
+        ,
           radius: [0, '90%'],
           label: {
             rotate: 0
           },
           levels: [{},  {
             itemStyle: {
-              color: "#6be6c1",
+              color: "#ffee51",
             }
           }, {
             itemStyle: {
-              color: "#626c91",
+              color: "#ffaf51",
             }
           }, {
             itemStyle: {
-              color: "#a0a7e6",
+              color: "#ff715e",
             }
           }, {
             itemStyle: {
-              color: "#3fb1e3",
+              color: "#715c87",
             },
             label: {
               rotate: 'radial'
@@ -177,7 +175,7 @@ export default {
     }
   },
   mounted: function() {
-    this.chartColumn = echarts.init(document.getElementById('chartColumn'), 'walden')
+    this.chartColumn = echarts.init(document.getElementById('chartColumn'), 'halloween')
     this.chartColumn.setOption(this.depOption)
 
   }
