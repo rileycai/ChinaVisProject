@@ -24,6 +24,7 @@ service.interceptors.request.use(config => {
 // respone拦截器
 service.interceptors.response.use(
   response => {
+     return response
   /**
   * code为非20000是抛错 可结合自己业务进行修改
   */
@@ -51,7 +52,7 @@ service.interceptors.response.use(
     // } else {
     //   return response.data
     // }
-     return response
+
   },
   error => {
     console.log('err' + error)// for debug
