@@ -9,6 +9,7 @@ const whiteList = ['/login'] // 不重定向白名单
 
 router.beforeEach((to, from, next) => {
   NProgress.start()
+  // next({ path: '/' })
   if (getToken()) {
     if (to.path === '/login') {
       next({ path: '/' })
@@ -27,12 +28,13 @@ router.beforeEach((to, from, next) => {
       }
     }
   } else {
-    if (whiteList.indexOf(to.path) !== -1) {
-      next()
-    } else {
-      next('/login')
-      NProgress.done()
-    }
+    // if (whiteList.indexOf(to.path) !== -1) {
+    //   next()
+    // } else {
+    //   next('/login')
+    //   NProgress.done()
+    // }
+    next({ path: '/' })
   }
 })
 
