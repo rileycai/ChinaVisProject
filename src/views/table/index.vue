@@ -24,7 +24,7 @@
       <div id="emailWord" class="chartBox" style="height:400px;"></div>
     </el-col>
     <el-col :span="6" style="padding-right:10px;">
-      <div id="webPie" class="chartBox" style="height:400px;"></div>
+      <div id="emailRecWord" class="chartBox" style="height:400px;"></div>
     </el-col>
   </el-row>
 
@@ -34,10 +34,10 @@
       <div id="checkTime" class="chartBox" style="height:600px;margin-left:0px;"></div>
     </el-col>
     <el-col :span="6" style="padding-right:10px;">
-      <div id="emailWord2" class="chartBox" style="height:400px;"></div>
+      <div id="webPie" class="chartBox" style="height:600px;"></div>
     </el-col>
-    <el-col :span="6" style="padding-right:10px;">
-      <div id="webPie3" class="chartBox" style="height:400px;"></div>
+    <el-col :span="10" style="padding-right:10px;">
+      <div id="loginParallel" class="chartBox" style="height:600px;"></div>
     </el-col>
   </el-row>
 
@@ -58,6 +58,8 @@ export default {
     return {
       chartWord: "",
       emailWord: "",
+      emailRecWord: "",
+      loginParallel: "",
       webPie: '',
       checkTime: "",
       id: "",
@@ -74,7 +76,7 @@ export default {
   created() {},
   methods: {
     fetchData(params) {
-    //  console.log(params);
+      //  console.log(params);
       if (params > 1000 && params < 1600) {
         var url = "/" + params;
         request({
@@ -95,8 +97,10 @@ export default {
             this.data = response.data;
             this.domainWord(this.data.domain);
             this.EmailWord(this.data.email_subject);
-            this.WebPie();
+            this.WebPie(this.data.tag_count);
             this.CheckTime(this.data.check_day_time);
+            this.EmailRecWord(this.data.receive_email_subject);
+            this.LoginParallel();
           }
 
         })
@@ -151,7 +155,7 @@ export default {
     EmailWord(params) {
       var option = {
         title: {
-          text: "邮件主题词云图",
+          text: "邮件发送主题词云图",
           padding: [10, 10]
         },
         tooltip: {},
@@ -190,6 +194,47 @@ export default {
 
 
 
+    EmailRecWord(params) {
+      var option = {
+        title: {
+          text: "邮件接收主题词云图",
+          padding: [10, 10]
+        },
+        tooltip: {},
+        series: [{
+          type: 'wordCloud',
+          gridSize: 20,
+          sizeRange: [12, 36],
+          rotationRange: [0, 0],
+          shape: 'circle',
+          textStyle: {
+            normal: {
+              color: function() {
+                var color = [
+                  "#ff715e",
+                  "#ffaf51",
+                  "#ffee51",
+                  "#8c6ac4",
+                  "#715c87"
+                ];
+                var x = Math.round(Math.random() * 5);
+                return color[x];
+              }
+            },
+            emphasis: {
+              shadowBlur: 10,
+              shadowColor: '#333'
+            }
+          },
+          data: params
+        }]
+      };
+
+      this.emaiReclWord = echarts.init(document.getElementById('emailRecWord'), 'halloween')
+      this.emaiReclWord.setOption(option)
+    },
+
+
     WebPie(params) {
       var option = {
         title: {
@@ -205,41 +250,9 @@ export default {
         series: [{
           name: '面积模式',
           type: 'pie',
-          radius: [20, 110],
+          radius: [20, 160],
           roseType: 'area',
-          data: [{
-              value: 10,
-              name: 'rose1'
-            },
-            {
-              value: 5,
-              name: 'rose2'
-            },
-            {
-              value: 15,
-              name: 'rose3'
-            },
-            {
-              value: 25,
-              name: 'rose4'
-            },
-            {
-              value: 20,
-              name: 'rose5'
-            },
-            {
-              value: 35,
-              name: 'rose6'
-            },
-            {
-              value: 30,
-              name: 'rose7'
-            },
-            {
-              value: 40,
-              name: 'rose8'
-            }
-          ]
+          data: params
         }]
       };
 
@@ -296,12 +309,12 @@ export default {
         });
       }
 
-      function drawPie(params){
-      //  console.log(params);
-          pieInitialized = true;
-          params.setOption({
-              series: getPieSeries(scatterData, params)
-          });
+      function drawPie(params) {
+        //  console.log(params);
+        pieInitialized = true;
+        params.setOption({
+          series: getPieSeries(scatterData, params)
+        });
       }
 
 
@@ -315,7 +328,7 @@ export default {
         tooltip: {},
         legend: {
           data: ['工作', '生活'],
-          top:'10'
+          top: '10'
         },
         calendar: {
           top: 'middle',
@@ -325,11 +338,11 @@ export default {
           splitLine: {
             show: true,
             lineStyle: {
-                color: '#ccc',
-                width: 2,
-                type: 'solid'
+              color: '#ccc',
+              width: 2,
+              type: 'solid'
             }
-        },
+          },
           yearLabel: {
             show: false,
             textStyle: {
@@ -379,17 +392,91 @@ export default {
 
 
       this.checkTime = echarts.init(document.getElementById('checkTime'), 'halloween')
-  //    console.log(this.checkTime);
+
       this.checkTime.setOption(option)
 
-       if (!app.inNode) {
-          var pieInitialized;
-          setTimeout(drawPie(this.checkTime), 10);
+      if (!app.inNode) {
+        var pieInitialized;
+        setTimeout(drawPie(this.checkTime), 10);
       }
 
 
 
+    },
+
+
+    LoginParallel() {
+
+      var url = "/login/" + this.id;
+      request({
+        url: url,
+        method: 'get'
+      }).then(response => {
+        console.log(response);
+
+        var option = {
+          title: {
+            text: "登录服务器平行坐标图",
+            padding: [10, 10]
+          },
+
+          tooltip: {
+            trigger: 'item'
+          },
+          parallelAxis: [{
+              dim: 0,
+              name: 'sip',
+              type: 'category',
+              data: response.data.parallels[0]
+            },
+            {
+              dim: 1,
+              name: 'user',
+              type: 'category',
+              data: response.data.parallels[1]
+            },
+            {
+              dim: 2,
+              name: 'date'
+            },
+            {
+              dim: 3,
+              name: 'dip',
+              type: 'category',
+              data: response.data.parallels[3]
+            },
+            {
+              dim: 4,
+              name: 'state',
+              type: 'category',
+              data: response.data.parallels[4]
+            }
+          ],
+          series: {
+            type: 'parallel',
+            smooth: 0.3,
+            lineStyle: {
+              width: 1
+            },
+            data: response.data.data
+
+          }
+        };
+
+
+
+        this.loginParallel = echarts.init(document.getElementById('loginParallel'), 'halloween')
+
+        this.loginParallel.setOption(option)
+
+
+      })
+
+
+
+
     }
+
 
 
 
