@@ -1,2 +1,5 @@
 export { default as Checktime } from './Checktime'
 export { default as Server } from './Server'
+export { default as Webclass } from './Webclass'
+export { default as Tcplog } from './Tcplog'
+export { default as LoginError } from './LoginError'

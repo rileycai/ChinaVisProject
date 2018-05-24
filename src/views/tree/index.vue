@@ -9,8 +9,20 @@
 
     </el-col>
   </el-row>
-  <el-row>
-    <el-col :span="24">
+  <el-row style="margin-top:10px;">
+    <el-col :span="12">
+         <webclass></webclass>
+    </el-col>
+    <el-col :span="12">
+
+         <loginError></loginError>
+    </el-col>
+  </el-row>
+  <el-row style="margin-top:10px;">
+    <el-col :span="12">
+         <tcplog></tcplog>
+    </el-col>
+    <el-col :span="12">
 
     </el-col>
   </el-row>
@@ -19,7 +31,7 @@
 </template>
 
 <script>
-import { Checktime,Server } from '@/views/tree/components'
+import { Checktime,Server,Webclass,Tcplog,LoginError } from '@/views/tree/components'
 import echarts from 'echarts'
 require('echarts/theme/westeros')
 require('echarts/theme/walden')
@@ -28,7 +40,10 @@ export default {
   name: 'dashboard',
   components: {
     Checktime,
-    Server
+    Server,
+    Webclass,
+    Tcplog,
+    LoginError
   },
   data() {
     return {
