@@ -5,7 +5,7 @@
       <department></department>
     </el-col>
     <el-col :span="16" >
-      <!-- <employee></employee> -->
+
       <emailrel></emailrel>
     </el-col>
   </el-row>

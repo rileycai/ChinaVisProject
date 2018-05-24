@@ -1,71 +1,58 @@
 <template>
-  <div class="app-container">
-    <el-input placeholder="Filter keyword" v-model="filterText" style="margin-bottom:30px;"></el-input>
+<div class="dashboard-container">
+  <el-row>
+    <el-col :span="16" >
+        <checktime></checktime>
+    </el-col>
+    <el-col :span="8" >
+    <server></server>
 
-    <el-tree class="filter-tree" :data="data2" :props="defaultProps" default-expand-all :filter-node-method="filterNode" ref="tree2"></el-tree>
+    </el-col>
+  </el-row>
+  <el-row>
+    <el-col :span="24">
 
-  </div>
+    </el-col>
+  </el-row>
+
+</div>
 </template>
 
 <script>
+import { Checktime,Server } from '@/views/tree/components'
+import echarts from 'echarts'
+require('echarts/theme/westeros')
+require('echarts/theme/walden')
+
 export default {
-  watch: {
-    filterText(val) {
-      this.$refs.tree2.filter(val)
-    }
+  name: 'dashboard',
+  components: {
+    Checktime,
+    Server
   },
-
-  methods: {
-    filterNode(value, data) {
-      if (!value) return true
-      return data.label.indexOf(value) !== -1
-    }
-  },
-
   data() {
     return {
-      filterText: '',
-      data2: [{
-        id: 1,
-        label: 'Level one 1',
-        children: [{
-          id: 4,
-          label: 'Level two 1-1',
-          children: [{
-            id: 9,
-            label: 'Level three 1-1-1'
-          }, {
-            id: 10,
-            label: 'Level three 1-1-2'
-          }]
-        }]
-      }, {
-        id: 2,
-        label: 'Level one 2',
-        children: [{
-          id: 5,
-          label: 'Level two 2-1'
-        }, {
-          id: 6,
-          label: 'Level two 2-2'
-        }]
-      }, {
-        id: 3,
-        label: 'Level one 3',
-        children: [{
-          id: 7,
-          label: 'Level two 3-1'
-        }, {
-          id: 8,
-          label: 'Level two 3-2'
-        }]
-      }],
-      defaultProps: {
-        children: 'children',
-        label: 'label'
-      }
+
+
     }
+  },
+  mounted: function() {
+
+
   }
 }
 </script>
 
+<style rel="stylesheet/scss" lang="scss" scoped>
+.dashboard {
+    &-container {
+        margin: 10px 10px 10px -20px;
+        height: auto;
+
+    }
+    &-text {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+</style>

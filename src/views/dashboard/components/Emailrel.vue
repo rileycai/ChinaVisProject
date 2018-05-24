@@ -1,6 +1,6 @@
 <template>
 <div class="emailrel">
-  <div id="chartEmail" style="width:100%; height:700px;"></div>
+  <div id="chartEmail" style="width:100%; height:600px;"></div>
 </div>
 </template>
 
