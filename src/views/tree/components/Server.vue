@@ -1,6 +1,6 @@
 <template>
 <div class="server">
-  <div id="chartServer" style="width:100%; height:600px;"></div>
+  <div id="chartServer" style="width:100%; height:500px;"></div>
 </div>
 </template>
 

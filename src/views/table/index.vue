@@ -133,7 +133,9 @@ export default {
                   "#ffaf51",
                   "#ffee51",
                   "#8c6ac4",
-                  "#715c87"
+                  "#715c87",
+                  "#e098c7",
+                  "#8fd3e8"
                 ];
                 var x = Math.round(Math.random() * 5);
                 return color[x];
@@ -173,7 +175,9 @@ export default {
                   "#ffaf51",
                   "#ffee51",
                   "#8c6ac4",
-                  "#715c87"
+                  "#715c87",
+                  "#e098c7",
+                  "#8fd3e8"
                 ];
                 var x = Math.round(Math.random() * 5);
                 return color[x];

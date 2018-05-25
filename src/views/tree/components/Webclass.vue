@@ -39,11 +39,7 @@ export default {
                 "</br>赌博：" + x.value[6] +
                 "</br>招聘：" + x.value[7]
 
-
-
-
             }
-
           }
 
 
@@ -51,6 +47,9 @@ export default {
         legend: {
           top: "10",
           data: ['人力资源', '财务', '研发1', '研发2', '研发3'],
+          selected: {
+                '研发2':true
+          },
           itemGap: 20,
           textStyle: {
 

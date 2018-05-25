@@ -1,6 +1,6 @@
 <template>
 <div class="checktime">
-  <div id="checktime" style="width:100%; height:600px;"></div>
+  <div id="checktime" style="width:100%; height:500px;"></div>
 </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
         },
         legend: {
           data: ['人力资源部门', '财务部门', '研发部门1', '研发部门2', '研发部门3'],
-          top: '30'
+          top: '10'
         },
 
         axisPointer: {
@@ -60,7 +60,7 @@ export default {
           }
         },
         dataZoom: [{
-            show: true,
+            show: false,
             realtime: true,
             start: 0,
             end: 100,
@@ -77,13 +77,13 @@ export default {
         grid: [{
           left: 50,
           right: 50,
-          top: '18%',
-          height: '30%'
+          top: '12%',
+          height: '37%'
         }, {
           left: 50,
           right: 50,
-          top: '56%',
-          height: '30%'
+          top: '55%',
+          height: '37%'
         }],
         xAxis: [{
             type: 'category',
@@ -143,6 +143,9 @@ export default {
             boundaryGap: false,
             axisLine: {
               onZero: true
+            },
+            axisLabel:{
+              show:false
             },
             data: ['06:00', '06:01', '06:02', '06:03', '06:04', '06:05', '06:06', '06:07', '06:08', '06:09', '06:10', '06:11', '06:12', '06:13', '06:14', '06:15', '06:16', '06:17', '06:18', '06:19', '06:20', '06:21', '06:22', '06:23', '06:24',
               '06:25', '06:26', '06:27', '06:28', '06:29', '06:30', '06:31', '06:32', '06:33', '06:34', '06:35', '06:36', '06:37', '06:38', '06:39', '06:40', '06:41', '06:42', '06:43', '06:44', '06:45', '06:46', '06:47', '06:48', '06:49',
