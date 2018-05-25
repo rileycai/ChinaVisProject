@@ -113,7 +113,7 @@ export default {
 
     var option = {
       title: {
-        text: "打卡上班时长日历图",
+        text: "打卡人数日历图",
         padding: [10, 10]
       },
       tooltip: {},

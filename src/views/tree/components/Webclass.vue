@@ -1,6 +1,6 @@
 <template>
 <div class="webclass">
-  <div id="webClass" style="width:100%; height:600px;"></div>
+  <div id="webClass" style="width:100%; height:500px;"></div>
 </div>
 </template>
 
