@@ -63,6 +63,10 @@ export default {
               name: '研发3',
               value: item[5]
             },
+            {
+              name: '未打卡',
+              value: 298-item[1]-item[2]-item[3]-item[4]-item[5]
+            },
 
           ]
         };
@@ -118,7 +122,10 @@ export default {
       },
       tooltip: {},
       legend: {
-        data: ['财务', '人力', '研发1', '研发2', '研发3'],
+        data: ['财务', '人力', '研发1', '研发2', '研发3','未打卡'],
+        selected:{
+          '未打卡':false
+        },
         right: 10,
         top: 10
       },

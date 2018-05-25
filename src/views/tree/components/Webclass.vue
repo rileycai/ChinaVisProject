@@ -48,7 +48,12 @@ export default {
           top: "10",
           data: ['人力资源', '财务', '研发1', '研发2', '研发3'],
           selected: {
-                '研发2':true
+                '研发2':true,
+                '人力资源':false,
+                '财务':false,
+                '研发1':false,
+                '研发3':false
+
           },
           itemGap: 20,
           textStyle: {

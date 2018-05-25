@@ -427,6 +427,27 @@ export default {
           tooltip: {
             trigger: 'item'
           },
+          visualMap: {
+            type: 'piecewise',
+            categories: response.data.parallels[1],
+            dimension: 1,
+            orient: 'horizontal',
+            top: 10,
+            textStyle: {
+              color: "##333"
+            },
+            left: 'center',
+            inRange: {
+              color: ["#ff715e",
+                "#ffaf51",
+                "#ffee51",
+                "#8c6ac4",
+                "#715c87"
+              ]
+            },
+            seriesIndex: [0]
+          },
+
           parallelAxis: [{
               dim: 0,
               name: 'sip',
