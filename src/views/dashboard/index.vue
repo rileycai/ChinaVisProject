@@ -21,8 +21,7 @@
 <script>
 import { Department,Employee,Organization,Emailrel } from '@/views/dashboard/components'
 import echarts from 'echarts'
-require('echarts/theme/westeros')
-require('echarts/theme/walden')
+
 
 export default {
   name: 'dashboard',

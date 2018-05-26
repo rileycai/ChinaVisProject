@@ -6,8 +6,7 @@
 
 <script>
 import echarts from 'echarts'
-require('echarts/theme/westeros')
-require('echarts/theme/walden')
+require('echarts/theme/halloween')
 
 export default {
   name: 'Employee',
@@ -1328,7 +1327,7 @@ export default {
     }
   },
   mounted: function() {
-    this.chartEmp = echarts.init(document.getElementById('chartEmp'), 'walden')
+    this.chartEmp = echarts.init(document.getElementById('chartEmp'), 'halloween')
     this.chartEmp.setOption(this.depOption)
 
   }

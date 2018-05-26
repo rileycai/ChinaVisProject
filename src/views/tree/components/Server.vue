@@ -6,8 +6,7 @@
 
 <script>
 import echarts from 'echarts'
-require('echarts/theme/westeros')
-require('echarts/theme/walden')
+
 require('echarts/theme/halloween')
 
 export default {

@@ -49,8 +49,7 @@ import request from '@/utils/request'
 import echarts from 'echarts'
 
 require('echarts-wordcloud')
-require('echarts/theme/westeros')
-require('echarts/theme/walden')
+
 require('echarts/theme/halloween')
 
 export default {
