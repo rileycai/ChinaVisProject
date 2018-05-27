@@ -31,13 +31,23 @@
   <el-row style="margin-top:10px;">
 
     <el-col :span="8" style="">
-      <div id="checkTime" class="chartBox" style="height:600px;margin-left:0px;"></div>
+      <div id="checkTime" class="chartBox" style="height:500px;margin-left:0px;"></div>
     </el-col>
     <el-col :span="6" style="padding-right:10px;">
-      <div id="webPie" class="chartBox" style="height:600px;"></div>
+      <div id="webPie" class="chartBox" style="height:500px;"></div>
     </el-col>
     <el-col :span="10" style="padding-right:10px;">
-      <div id="loginParallel" class="chartBox" style="height:600px;"></div>
+      <div id="loginParallel" class="chartBox" style="height:500px;"></div>
+    </el-col>
+  </el-row>
+  <el-row style="margin-top:10px;">
+    <el-col :span="24">
+      <div id="upDownFlow" class="chartBox" style="height:500px;margin-left:0px;"></div>
+    </el-col>
+  </el-row>
+  <el-row style="margin-top:10px;">
+    <el-col :span="24">
+      <div id="protoFlow" class="chartBox" style="height:500px;margin-left:0px;"></div>
     </el-col>
   </el-row>
 
@@ -82,7 +92,7 @@ export default {
           url: url,
           method: 'get'
         }).then(response => {
-          console.log(response);
+          // console.log(response);
           if (response.data.ip == null) {
             this.$message.error('查无此人');
             this.data = {
@@ -99,6 +109,7 @@ export default {
             this.WebPie(this.data.tag_count);
             this.CheckTime(this.data.check_day_time);
             this.EmailRecWord(this.data.receive_email_subject);
+            this.NetworkFlow();
             this.LoginParallel();
           }
 
@@ -415,7 +426,7 @@ export default {
         url: url,
         method: 'get'
       }).then(response => {
-        console.log(response);
+        // console.log(response);
 
         var option = {
           title: {
@@ -487,19 +498,120 @@ export default {
           }
         };
 
-
-
         this.loginParallel = echarts.init(document.getElementById('loginParallel'), 'halloween')
-
         this.loginParallel.setOption(option)
-
-
       })
+    },
 
+    NetworkFlow() {
 
+      var url = "/tcplog/" + this.id;
+      request({
+        url: url,
+        method: 'get'
+      }).then(response => {
+        console.log(response);
 
+        var option = {
+          tooltip: {
+            trigger: 'axis'
+          },
 
-    }
+          title: {
+            text: '上传下载流量图',
+            padding: [10, 10]
+          },
+          legend: {
+            data: ['upload', 'download'],
+            right: 50,
+            top: 10
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            containLabel: true
+          },
+          toolbox: {
+            feature: {
+              saveAsImage: {}
+            }
+          },
+          dataZoom: [{
+            startValue: '2017-11-01'
+          }, {
+            type: 'inside'
+          }],
+          xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: response.data.xAxis
+          },
+          yAxis: {
+            type: 'value',
+            max: 'dataMax'
+          },
+          series: [{
+              name: 'upload',
+              type: 'line',
+              data: response.data.upAxis
+            },
+            {
+              name: 'download',
+              type: 'line',
+              data: response.data.downAxis
+            }
+          ]
+        };
+        var option2 = {
+          tooltip: {
+            trigger: 'axis'
+          },
+          title: {
+            text: '按协议划分流量图',
+            padding: [10, 10]
+          },
+          legend: {
+            data: response.data.legend,
+            right: 50,
+            top: 10
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            containLabel: true
+          },
+          toolbox: {
+            feature: {
+              saveAsImage: {}
+            }
+          },
+
+          dataZoom: [{
+            startValue: '2017-11-01'
+          }, {
+            type: 'inside'
+          }],
+          xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: response.data.xAxis
+          },
+          yAxis: {
+            type: 'value',
+            max: 'dataMax'
+          },
+          series: response.data.protocols
+        };
+
+        this.protoFlow = echarts.init(document.getElementById('protoFlow'), 'halloween')
+        this.protoFlow.setOption(option2)
+
+        this.upDownFlow = echarts.init(document.getElementById('upDownFlow'), 'halloween')
+        this.upDownFlow.setOption(option)
+      })
+    },
 
 
 
