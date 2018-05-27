@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: npm start
+    ports:
+      - "8094:8094"
