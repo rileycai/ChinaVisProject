@@ -1,6 +1,6 @@
 <template>
 <div class="emailrel">
-  <div id="chartEmail" style="width:100%; height:600px;"></div>
+  <div id="chartEmail" style="width:100%; height:500px;"></div>
 </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
       EmailOption: {
         title: {
         text: '工作汇报结构图',
-        subtext: '邮件主题为总结、工作汇报、周报、月报等',
+        // subtext: '邮件主题为总结、工作汇报、周报、月报等',
         x: 'left',
         padding:[10,10]
         },
@@ -25,7 +25,9 @@ export default {
 
         legend: [{
           // selectedMode: 'single',
-          data: ["总经理", "部长", "组长", "普通员工"]
+          data: ["总经理", "部长", "组长", "普通员工"],
+          right:10,
+          top:10
         }],
         tooltip: {
           formatter: function(x) {
@@ -45,10 +47,12 @@ export default {
         series: [{
           name: 'Les Miserables',
           type: 'graph',
+
           legendHoverLink: true,
           hoverAnimation: true,
           focusNodeAdjacency: true,
           layout: 'force',
+          // layout:'circular',
           circular: {
             rotateLabel: true
           },
@@ -3435,6 +3439,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .emailrel {
     border: #ccc 1px solid;
+    margin-top: 10px;
 
 }
 </style>

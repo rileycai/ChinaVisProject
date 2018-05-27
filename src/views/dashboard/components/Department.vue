@@ -1,6 +1,6 @@
 <template>
 <div class="department">
-      <div id="chartColumn" style="width:100%; height:600px;"></div>
+      <div id="chartColumn" style="width:100%; height:500px;"></div>
 </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
       depOption: {
         title: {
         text: '部门结构图',
-        subtext: '299位员工，三大部门',
+        // subtext: '299位员工，三大部门',
         x: 'left',
         padding:[10,10]
         },
@@ -211,6 +211,6 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .department {
     border:#ccc 1px solid;
-    margin-right: 10px;
+    // margin-right: 10px;
 }
 </style>

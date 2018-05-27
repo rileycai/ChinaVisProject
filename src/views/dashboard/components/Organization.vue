@@ -1,6 +1,6 @@
 <template>
 <div class="organization">
-  <div id="chartOrgan" style="width:100%; height:800px;"></div>
+  <div id="chartOrgan" style="width:100%; height:1010px;"></div>
 </div>
 </template>
 
@@ -84,7 +84,7 @@ export default {
 
       title: {
         text: '员工组织结构图',
-        subtext:'共299名员工，分属财务、人力资源和研发三个部门',
+        // subtext:'共299名员工，分属财务、人力资源和研发三个部门',
         x: 'left',
         padding:[10,10]
       },
@@ -115,9 +115,16 @@ export default {
         name: 'HighTech',
         type: 'treemap',
         visibleMin: 300,
+        left:20,
+        top:50,
+        right:20,
+        bottom:30,
         label: {
           show: true,
-          formatter: '{b}'
+          formatter: '{b}',
+          ellipsis:false,
+          // fontSize:6,
+          // color:"#acacac"
         },
         upperLabel: {
           normal: {
@@ -1589,6 +1596,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .organization {
     border: #ccc 1px solid;
-    margin-top: 10px;
+    margin-left: 10px;
+
 }
 </style>

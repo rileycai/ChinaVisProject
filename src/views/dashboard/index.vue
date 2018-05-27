@@ -1,19 +1,22 @@
 <template>
 <div class="dashboard-container">
   <el-row>
-    <el-col :span="8" >
-      <department></department>
-    </el-col>
-    <el-col :span="16" >
+    <el-col :span="7" >
+      <el-row>
+            <department></department>
+      </el-row>
+      <el-row>
+            <emailrel></emailrel>
+      </el-row>
 
-      <emailrel></emailrel>
+
+    </el-col>
+    <el-col :span="17" >
+      <organization></organization>
+
     </el-col>
   </el-row>
-  <el-row>
-    <el-col :span="24">
-        <organization></organization>
-    </el-col>
-  </el-row>
+
 
 </div>
 </template>
