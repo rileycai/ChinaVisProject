@@ -10,11 +10,11 @@
     </el-col>
   </el-row>
   <el-row style="margin-top:10px;">
-    <el-col :span="8">
+    <el-col :span="10">
       <checkdep></checkdep>
 
     </el-col>
-    <el-col :span="16">
+    <el-col :span="14">
          <tcplog></tcplog>
     </el-col>
 

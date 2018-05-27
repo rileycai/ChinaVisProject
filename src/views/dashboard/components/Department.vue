@@ -30,118 +30,145 @@ export default {
         series: {
           type: 'sunburst',
           // highlightPolicy: 'ancestor',
-          data: [{
-              name: '研发',
-              value: 256,
-              children: [{
-                  name: '研发1 (9组)',
-                  value: 88,
-                  children: [{
-                    name: '小组1-1',
-                    value: 7,
-                  }, {
-                    name: '小组1-2',
-                    value: 6,
-                  }, {
-                    name: '小组1-3',
-                    value: 14,
-                  }, {
-                    name: '小组1-4',
-                    value: 4,
-                  }, {
-                    name: '小组1-5',
-                    value: 13,
-                  }, {
-                    name: '小组1-6',
-                    value: 8,
-                  }, {
-                    name: '小组1-7',
-                    value: 6,
-                  }, {
-                    name: '小组1-8',
-                    value: 19,
-                  }, {
-                    name: '小组1-9',
-                    value: 10,
-                  }]
-                },
+          data: [
+            {
+             name: 'HighTech',
+             value: 299,
+             itemStyle:{
+                 color:"#8c6ac4"
+             },
+             children:[{
+                 name: '研发',
+                 value: 256,
+                 itemStyle:{
+                     color:"#ff4b33"
+                 },
+                 children: [{
+                     name: '研发1 (9组)',
+                     value: 88,
+                     itemStyle: {
+                       color: "#ff7866",
+                     },
+                     children: [{
+                       name: '小组1-1',
+                       value: 7,
+                     }, {
+                       name: '小组1-2',
+                       value: 6,
+                     }, {
+                       name: '小组1-3',
+                       value: 14,
+                     }, {
+                       name: '小组1-4',
+                       value: 4,
+                     }, {
+                       name: '小组1-5',
+                       value: 13,
+                     }, {
+                       name: '小组1-6',
+                       value: 8,
+                     }, {
+                       name: '小组1-7',
+                       value: 6,
+                     }, {
+                       name: '小组1-8',
+                       value: 19,
+                     }, {
+                       name: '小组1-9',
+                       value: 10,
+                     }]
+                   },
 
-                {
-                  name: '研发2 (11组)',
-                  value: 106,
-                  children: [{
-                      name: '小组2-1',
-                      value: 7,
-                    }, {
-                      name: '小组2-2',
-                      value: 12,
-                    }, {
-                      name: '小组2-3',
-                      value: 5,
-                    }, {
-                      name: '小组2-4',
-                      value: 11,
-                    }, {
-                      name: '小组2-5',
-                      value: 6,
-                    }, {
-                      name: '小组2-6',
-                      value: 11,
-                    }, {
-                      name: '小组2-7',
-                      value: 11,
-                    }, {
-                      name: '小组2-8',
-                      value: 12,
-                    }, {
-                      name: '小组2-9',
-                      value: 12,
-                    }, {
-                      name: '小组2-10',
-                      value: 9,
-                    },
-                    {
-                      name: '小组2-11',
-                      value: 9,
-                    }
-                  ]
-                },
+                   {
+                     name: '研发2 (11组)',
+                     value: 106,
+                     itemStyle: {
+                       color: "#ff7866",
+                     },
+                     children: [{
+                         name: '小组2-1',
+                         value: 7,
+                       }, {
+                         name: '小组2-2',
+                         value: 12,
+                       }, {
+                         name: '小组2-3',
+                         value: 5,
+                       }, {
+                         name: '小组2-4',
+                         value: 11,
+                       }, {
+                         name: '小组2-5',
+                         value: 6,
+                       }, {
+                         name: '小组2-6',
+                         value: 11,
+                       }, {
+                         name: '小组2-7',
+                         value: 11,
+                       }, {
+                         name: '小组2-8',
+                         value: 12,
+                       }, {
+                         name: '小组2-9',
+                         value: 12,
+                       }, {
+                         name: '小组2-10',
+                         value: 9,
+                       },
+                       {
+                         name: '小组2-11',
+                         value: 9,
+                       }
+                     ]
+                   },
 
-                {
-                  name: '研发3  (7组)',
-                  value: 62,
-                  children: [{
-                    name: '小组3-1',
-                    value: 10,
-                  }, {
-                    name: '小组3-2',
-                    value: 6,
-                  }, {
-                    name: '小组3-3',
-                    value: 16,
-                  }, {
-                    name: '小组3-4',
-                    value: 5,
-                  }, {
-                    name: '小组3-5',
-                    value: 8,
-                  }, {
-                    name: '小组3-6',
-                    value: 8,
-                  }, {
-                    name: '小组3-7',
-                    value: 8,
-                  }]
-                }
-              ]
-            }, {
-              name: '人力资源',
-              value: 18
-            }, {
-              name: '财务',
-              value: 24
-            }]
-        ,
+                   {
+                     name: '研发3  (7组)',
+                     value: 62,
+                     itemStyle: {
+                       color: "#ff7866",
+                     },
+                     children: [{
+                       name: '小组3-1',
+                       value: 10,
+                     }, {
+                       name: '小组3-2',
+                       value: 6,
+                     }, {
+                       name: '小组3-3',
+                       value: 16,
+                     }, {
+                       name: '小组3-4',
+                       value: 5,
+                     }, {
+                       name: '小组3-5',
+                       value: 8,
+                     }, {
+                       name: '小组3-6',
+                       value: 8,
+                     }, {
+                       name: '小组3-7',
+                       value: 8,
+                     }]
+                   }
+                 ]
+               }, {
+                 name: '人力资源',
+                 value: 18,
+                 itemStyle: {
+                   color: "#ffee51",
+                 }
+               }, {
+                 name: '财务',
+                 value: 24,
+                 itemStyle:{
+                     color:"#ffaf51"
+                 },
+               }]
+           },
+
+        ],
           radius: [0, '90%'],
           label: {
             rotate: 0
@@ -160,7 +187,7 @@ export default {
             }
           }, {
             itemStyle: {
-              color: "#715c87",
+              color: "#ff1e00",
             },
             label: {
               rotate: 'radial'
