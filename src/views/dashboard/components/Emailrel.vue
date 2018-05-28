@@ -31,7 +31,7 @@ export default {
         }],
         tooltip: {
           formatter: function(x) {
-            console.log(x);
+            // console.log(x);
 
             if (x.data.source != undefined) {
               return "邮件往来:" + x.data.value;
@@ -3412,7 +3412,8 @@ export default {
               curveness: 0.1
             }
           },
-          draggable: true,
+          // draggable: true,
+          clickable : true,
           force: {
             repulsion: 150,
             gravity: 0.25,
@@ -3431,6 +3432,9 @@ export default {
   mounted: function() {
     this.chartEmail = echarts.init(document.getElementById('chartEmail'), 'halloween')
     this.chartEmail.setOption(this.EmailOption)
+    this.chartEmail.on("click", function (param){
+          console.log(param);
+     });
 
   }
 }

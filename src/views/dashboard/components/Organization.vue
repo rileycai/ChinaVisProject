@@ -90,7 +90,7 @@ export default {
       },
       tooltip: {
         formatter: function(info) {
-          console.log(info);
+          // console.log(info);
           var value = info.data.discretion;
           var temp;
           var treePathInfo = info.treePathInfo;

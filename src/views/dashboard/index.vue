@@ -1,17 +1,17 @@
 <template>
 <div class="dashboard-container">
   <el-row>
-    <el-col :span="7" >
+    <el-col :span="6" >
       <el-row>
             <department></department>
       </el-row>
-      <el-row>
+      <!-- <el-row>
             <emailrel></emailrel>
-      </el-row>
+      </el-row> -->
 
 
     </el-col>
-    <el-col :span="17" >
+    <el-col :span="18" >
       <organization></organization>
 
     </el-col>
