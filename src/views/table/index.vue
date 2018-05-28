@@ -92,7 +92,7 @@ export default {
           url: url,
           method: 'get'
         }).then(response => {
-          // console.log(response);
+          console.log(response);
           if (response.data.ip == null) {
             this.$message.error('查无此人');
             this.data = {
@@ -345,8 +345,10 @@ export default {
           top: '10'
         },
         calendar: {
-          top: 'middle',
+          // top: 'middle',
           left: 'center',
+          bottom:20,
+          top:70,
           orient: 'vertical',
           cellSize: cellSize,
           splitLine: {
@@ -457,6 +459,11 @@ export default {
             },
             seriesIndex: [0]
           },
+          parallel:{
+            bottom:20,
+            left:20,
+            top:70,
+          },
 
           parallelAxis: [{
               dim: 0,
@@ -476,20 +483,27 @@ export default {
             },
             {
               dim: 3,
-              name: 'dip',
+              name: 'time',
               type: 'category',
               data: response.data.parallels[3]
             },
             {
               dim: 4,
-              name: 'state',
+              name: 'dip',
               type: 'category',
               data: response.data.parallels[4]
+            },
+            {
+              dim: 5,
+              name: 'state',
+              type: 'category',
+              data: response.data.parallels[5]
             }
           ],
           series: {
             type: 'parallel',
             smooth: 0.3,
+
             lineStyle: {
               width: 1
             },
@@ -510,7 +524,7 @@ export default {
         url: url,
         method: 'get'
       }).then(response => {
-        console.log(response);
+        // console.log(response);
 
         var option = {
           tooltip: {
