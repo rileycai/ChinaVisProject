@@ -1,51 +1,45 @@
 <template>
 <div class="dashboard-container">
-  <!-- <el-row>
-    <el-col :span="16" >
-        <checktime></checktime>
-    </el-col>
-    <el-col :span="8" >
-    <server></server>
-
-    </el-col>
-  </el-row>
-  <el-row style="margin-top:10px;">
-    <el-col :span="10">
-      <checkdep></checkdep>
-
-    </el-col>
-    <el-col :span="14">
-         <tcplog></tcplog>
-    </el-col>
-
-  </el-row>
-
-  <el-row style="margin-top:10px;">
-    <el-col :span="8" style="padding-right:10px;margin-left:-10px;">
-      <div id="emailSum" class="chartBox" style="height:500px;"></div>
-    </el-col>
-    <el-col :span="8" style="padding-right:10px;">
-      <div id="positiontWord" class="chartBox" style="height:500px;"></div>
-    </el-col>
-    <el-col :span="8" style="padding-right:10px;">
-      <div id="positiontWord2" class="chartBox" style="height:500px;"></div>
-    </el-col>
-  </el-row>
-  <el-row style="margin-top:10px;">
-    <el-col :span="12">
-         <webclass></webclass>
-    </el-col>
-    <el-col :span="12">
-         <loginError></loginError>
-    </el-col>
-  </el-row> -->
-
-
       <departmentcloudword></departmentcloudword>
+      <el-row style="margin-top:10px;">
+        <el-col :span="16" >
+            <checktime></checktime>
+        </el-col>
+        <el-col :span="8" >
+        <server></server>
+
+        </el-col>
+      </el-row>
+      <el-row style="margin-top:10px;">
+        <el-col :span="10">
+          <checkdep></checkdep>
+
+        </el-col>
+        <el-col :span="14">
+             <tcplog></tcplog>
+        </el-col>
+
+      </el-row>
 
 
+      <el-row style="margin-top:10px;">
+        <el-col :span="12">
+             <webclass></webclass>
+        </el-col>
+        <el-col :span="12">
+             <loginError></loginError>
+        </el-col>
+      </el-row>
 
 
+      <el-row style="margin-top:10px;">
+        <el-col :span="12" style="padding-right:10px;">
+          <usaupload></usaupload>
+        </el-col>
+        <el-col :span="12" style="padding-right:10px;">
+          <databaseerror></databaseerror>
+        </el-col>
+      </el-row>
 
 
 </div>
@@ -59,7 +53,9 @@ import {
   Tcplog,
   LoginError,
   Checkdep,
-  Departmentcloudword
+  Departmentcloudword,
+  Usaupload,
+  Databaseerror
 } from '@/views/tree/components'
 import echarts from 'echarts'
 require('echarts/theme/halloween')
@@ -74,7 +70,9 @@ export default {
     Tcplog,
     LoginError,
     Checkdep,
-    Departmentcloudword
+    Departmentcloudword,
+    Usaupload,
+    Databaseerror
   },
   data() {
     return {

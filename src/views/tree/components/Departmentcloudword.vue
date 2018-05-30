@@ -4210,10 +4210,10 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.departmentcloudword{
-    border:#ccc 1px solid;
-    // margin-right: 10px;
-}
+// .departmentcloudword{
+//     border:#ccc 1px solid;
+//     // margin-right: 10px;
+// }
 .chartBox {
     width: 100%;
     border: #ccc 1px solid;
