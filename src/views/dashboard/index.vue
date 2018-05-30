@@ -5,10 +5,6 @@
       <el-row>
             <department></department>
       </el-row>
-      <!-- <el-row>
-            <emailrel></emailrel>
-      </el-row> -->
-
 
     </el-col>
     <el-col :span="18" >
