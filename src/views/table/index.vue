@@ -333,16 +333,18 @@ export default {
 
 
       var scatterData = params;
+      var thisTitle=this.id+"打卡上班时长日历图";
 
       var option = {
         title: {
-          text: "打卡上班时长日历图",
+          text: thisTitle,
           padding: [10, 10]
         },
         tooltip: {},
         legend: {
           data: ['工作', '生活'],
-          top: '10'
+          top: 10,
+          right:10
         },
         calendar: {
           // top: 'middle',

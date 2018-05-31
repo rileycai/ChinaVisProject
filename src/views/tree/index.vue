@@ -42,6 +42,13 @@
       </el-row>
 
 
+ <el-row style="margin-top:10px;">
+   <el-col :span="8" style="padding-right:10px;">
+     <playball></playball>
+
+   </el-col>
+
+ </el-row>
 </div>
 </template>
 
@@ -55,7 +62,8 @@ import {
   Checkdep,
   Departmentcloudword,
   Usaupload,
-  Databaseerror
+  Databaseerror,
+  Playball
 } from '@/views/tree/components'
 import echarts from 'echarts'
 require('echarts/theme/halloween')
@@ -72,7 +80,8 @@ export default {
     Checkdep,
     Departmentcloudword,
     Usaupload,
-    Databaseerror
+    Databaseerror,
+    Playball
   },
   data() {
     return {
