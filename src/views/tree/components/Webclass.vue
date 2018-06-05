@@ -44,7 +44,7 @@ export default {
 
         },
         legend: {
-          top: "10",
+          top: 40,
           data: ['人力资源', '财务', '研发1', '研发2', '研发3'],
           selected: {
                 '研发2':true,
@@ -99,7 +99,7 @@ export default {
             },
 
           ],
-          center: ['25%', '50%'],
+          center: ['50%', '55%'],
           radius: 160,
           startAngle: 90,
           shape: 'circle',
@@ -206,33 +206,33 @@ export default {
               }
             },
           },
-          {
-            name: '人力资源',
-            type: 'pie',
-            center: ['75%', '50%'],
-            radius: '28%',
-            z: 100,
-            radius: [30, 160],
-
-            roseType : 'area',
-            data: [{
-                value: 6862,
-                name: '办公'
-              },
-              {
-                value: 712,
-                name: '购物'
-              },
-              {
-                value: 1447,
-                name: '搜索'
-              },
-              {
-                value: 3947,
-                name: '娱乐'
-              }
-            ],
-          },
+          // {
+          //   name: '人力资源',
+          //   type: 'pie',
+          //   center: ['75%', '50%'],
+          //   radius: '28%',
+          //   z: 100,
+          //   radius: [30, 160],
+          //
+          //   roseType : 'area',
+          //   data: [{
+          //       value: 6862,
+          //       name: '办公'
+          //     },
+          //     {
+          //       value: 712,
+          //       name: '购物'
+          //     },
+          //     {
+          //       value: 1447,
+          //       name: '搜索'
+          //     },
+          //     {
+          //       value: 3947,
+          //       name: '娱乐'
+          //     }
+          //   ],
+          // },
           {
             name: '财务',
             type: 'radar',
@@ -353,37 +353,37 @@ export default {
               }
             },
           },
-          {
-            name: '财务',
-            type: 'pie',
-            center: ['75%', '50%'],
-            radius: '28%',
-            z: 100,
-            radius: [30, 160],
-
-            roseType : 'area',
-            data: [{
-                value: 5289,
-                name: '办公'
-              },
-              {
-                value: 853,
-                name: '购物'
-              },
-              {
-                value: 1434,
-                name: '搜索'
-              },
-              {
-                value: 2748,
-                name: '娱乐'
-              },
-              {
-                value: 8,
-                name: '招聘'
-              },
-            ],
-          },
+          // {
+          //   name: '财务',
+          //   type: 'pie',
+          //   center: ['75%', '50%'],
+          //   radius: '28%',
+          //   z: 100,
+          //   radius: [30, 160],
+          //
+          //   roseType : 'area',
+          //   data: [{
+          //       value: 5289,
+          //       name: '办公'
+          //     },
+          //     {
+          //       value: 853,
+          //       name: '购物'
+          //     },
+          //     {
+          //       value: 1434,
+          //       name: '搜索'
+          //     },
+          //     {
+          //       value: 2748,
+          //       name: '娱乐'
+          //     },
+          //     {
+          //       value: 8,
+          //       name: '招聘'
+          //     },
+          //   ],
+          // },
           {
             name: '研发1',
             type: 'radar',
@@ -762,49 +762,49 @@ export default {
           },
 
 
-          {
-            name: '研发1',
-            type: 'pie',
-            center: ['75%', '50%'],
-            radius: '28%',
-            z: 100,
-            radius: [30, 160],
-
-            roseType : 'area',
-            data: [{
-                value: 14520,
-                name: '开发'
-              },
-              {
-                value: 28878,
-                name: '办公'
-              },
-              {
-                value: 297,
-                name: '赌博'
-              },
-              {
-                value: 620,
-                name: '购物'
-              },
-              {
-                value: 6737,
-                name: '技术'
-              },
-              {
-                value: 1120,
-                name: '搜索'
-              },
-              {
-                value: 5559,
-                name: '娱乐'
-              },
-              {
-                value: 70,
-                name: '招聘'
-              },
-            ],
-          },
+          // {
+          //   name: '研发1',
+          //   type: 'pie',
+          //   center: ['75%', '50%'],
+          //   radius: '28%',
+          //   z: 100,
+          //   radius: [30, 160],
+          //
+          //   roseType : 'area',
+          //   data: [{
+          //       value: 14520,
+          //       name: '开发'
+          //     },
+          //     {
+          //       value: 28878,
+          //       name: '办公'
+          //     },
+          //     {
+          //       value: 297,
+          //       name: '赌博'
+          //     },
+          //     {
+          //       value: 620,
+          //       name: '购物'
+          //     },
+          //     {
+          //       value: 6737,
+          //       name: '技术'
+          //     },
+          //     {
+          //       value: 1120,
+          //       name: '搜索'
+          //     },
+          //     {
+          //       value: 5559,
+          //       name: '娱乐'
+          //     },
+          //     {
+          //       value: 70,
+          //       name: '招聘'
+          //     },
+          //   ],
+          // },
           {
             name: '研发2',
             type: 'radar',
@@ -1310,49 +1310,49 @@ export default {
             },
           },
 
-          {
-            name: '研发2',
-            type: 'pie',
-            center: ['75%', '50%'],
-            radius: '28%',
-            z: 100,
-            radius: [30, 160],
-
-            roseType : 'area',
-            data: [{
-                value: 13585,
-                name: '开发'
-              },
-              {
-                value: 26913,
-                name: '办公'
-              },
-              {
-                value: 243,
-                name: '赌博'
-              },
-              {
-                value: 331,
-                name: '购物'
-              },
-              {
-                value: 6678,
-                name: '技术'
-              },
-              {
-                value: 1014,
-                name: '搜索'
-              },
-              {
-                value: 5260,
-                name: '娱乐'
-              },
-              {
-                value: 598,
-                name: '招聘'
-              },
-            ],
-          },
+          // {
+          //   name: '研发2',
+          //   type: 'pie',
+          //   center: ['75%', '50%'],
+          //   radius: '28%',
+          //   z: 100,
+          //   radius: [30, 160],
+          //
+          //   roseType : 'area',
+          //   data: [{
+          //       value: 13585,
+          //       name: '开发'
+          //     },
+          //     {
+          //       value: 26913,
+          //       name: '办公'
+          //     },
+          //     {
+          //       value: 243,
+          //       name: '赌博'
+          //     },
+          //     {
+          //       value: 331,
+          //       name: '购物'
+          //     },
+          //     {
+          //       value: 6678,
+          //       name: '技术'
+          //     },
+          //     {
+          //       value: 1014,
+          //       name: '搜索'
+          //     },
+          //     {
+          //       value: 5260,
+          //       name: '娱乐'
+          //     },
+          //     {
+          //       value: 598,
+          //       name: '招聘'
+          //     },
+          //   ],
+          // },
           {
             name: '研发3',
             type: 'radar',
@@ -1625,52 +1625,52 @@ export default {
             },
           },
 
-          {
-            name: '研发3',
-            type: 'pie',
-            center: ['75%', '50%'],
-            radius: '28%',
-            z: 100,
-            radius: [30, 160],
-
-            roseType : 'area',
-            data: [{
-                value: 7297,
-                name: '开发'
-              },
-              {
-                value: 14800,
-                name: '办公'
-              },
-              {
-                value: 67,
-                name: '赌博'
-              },
-              {
-                value: 248,
-                name: '购物'
-              },
-              {
-                value: 3660,
-                name: '技术'
-              },
-              {
-                value: 521,
-                name: '搜索'
-              },
-              {
-                value: 2946,
-                name: '娱乐'
-              },
-              {
-                value: 12,
-                name: '招聘'
-              },
-            ],
-          },
-
-        ]
-      }
+      //     {
+      //       name: '研发3',
+      //       type: 'pie',
+      //       center: ['75%', '50%'],
+      //       radius: '28%',
+      //       z: 100,
+      //       radius: [30, 160],
+      //
+      //       roseType : 'area',
+      //       data: [{
+      //           value: 7297,
+      //           name: '开发'
+      //         },
+      //         {
+      //           value: 14800,
+      //           name: '办公'
+      //         },
+      //         {
+      //           value: 67,
+      //           name: '赌博'
+      //         },
+      //         {
+      //           value: 248,
+      //           name: '购物'
+      //         },
+      //         {
+      //           value: 3660,
+      //           name: '技术'
+      //         },
+      //         {
+      //           value: 521,
+      //           name: '搜索'
+      //         },
+      //         {
+      //           value: 2946,
+      //           name: '娱乐'
+      //         },
+      //         {
+      //           value: 12,
+      //           name: '招聘'
+      //         },
+      //       ],
+      //     },
+      //
+         ]
+       }
 
     }
   },

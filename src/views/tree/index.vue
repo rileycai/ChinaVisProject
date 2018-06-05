@@ -23,8 +23,12 @@
 
 
       <el-row style="margin-top:10px;">
-        <el-col :span="12">
+        <el-col :span="6">
              <webclass></webclass>
+        </el-col>
+        <el-col :span="6" style="padding-right:10px;">
+          <playball></playball>
+
         </el-col>
         <el-col :span="12">
              <loginError></loginError>
@@ -42,13 +46,13 @@
       </el-row>
 
 
- <el-row style="margin-top:10px;">
+ <!-- <el-row style="margin-top:10px;">
    <el-col :span="8" style="padding-right:10px;">
      <playball></playball>
 
    </el-col>
 
- </el-row>
+ </el-row> -->
 </div>
 </template>
 
