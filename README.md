@@ -47,7 +47,13 @@
 
 
 ## 效果图
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/001.png)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/001.jpg)
 
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/002.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/003.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/004.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/005.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/006.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/007.jpg)
 
 Copyright (c) 2018-present ZhenzhenCai
