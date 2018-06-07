@@ -62,4 +62,8 @@
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/006.jpg)
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/007.jpg)
 
+## 演示视频
+
+链接：https://pan.baidu.com/s/1-7fLOWdasXVknVouTHUdKw 密码：vml4
+
 Copyright (c) 2018-present ZhenzhenCai
