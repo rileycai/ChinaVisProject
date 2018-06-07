@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/github/release/PanJiaChen/vue-element-admin.svg" alt="GitHub release">
   </a>
 </p>
- chinavis2018 挑战1
+ chinavis2018挑战1提交项目源工程
    
 ## 技术栈
     vue2 + vuex + vue-router + webpack + axios + element-UI + easy-mock
@@ -47,10 +47,16 @@
 
 
 ## 效果图
+第一题：
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/001.jpg)
-
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/002.jpg)
+
+
+第二题：
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/003.jpg)
+
+
+第三题：
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/004.jpg)
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/005.jpg)
 ![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/006.jpg)
