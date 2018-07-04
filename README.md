@@ -25,7 +25,9 @@
     <img src="https://img.shields.io/github/release/PanJiaChen/vue-element-admin.svg" alt="GitHub release">
   </a>
 </p>
- chinavis2018挑战1提交项目源工程
+ chinavis2018挑战1 一等奖作品
+ 含项目工程源码、演示视频、论文、答卷、项目截图
+ 后台服务已关闭
    
 ## 技术栈
     vue2 + vuex + vue-router + webpack + axios + element-UI + easy-mock
