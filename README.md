@@ -30,8 +30,7 @@
  后台服务已关闭
    
 ## 技术栈
-    vue2 + vuex + vue-router + webpack + axios + element-UI + easy-mock + ECharts
-
+    vue2 + vuex + vue-router + webpack + axios + element-UI + Mock.js + ECharts + D3.js + Tableau
 
 ## 开发
 ```bash
