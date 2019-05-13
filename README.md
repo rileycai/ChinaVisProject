@@ -30,8 +30,7 @@
  后台服务已关闭
    
 ## 技术栈
-    vue2 + vuex + vue-router + webpack + axios + element-UI + easy-mock
-
+    vue2 + vuex + vue-router + webpack + axios + element-UI + Mock.js + ECharts + D3.js + Tableau
 
 ## 开发
 ```bash
@@ -66,7 +65,8 @@
 
 ## 演示视频
 
-链接：https://pan.baidu.com/s/1-7fLOWdasXVknVouTHUdKw 密码：vml4
+链接：https://pan.baidu.com/s/17F6XTEvG5jcyJBHvPKSYYw 
+提取码：7e61
 
 ## 答卷&论文
 [答卷](https://github.com/zhenzhencai/ChinaVisProject/blob/master/pdf/%E7%AD%94%E5%8D%B7.pdf)
