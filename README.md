@@ -36,14 +36,23 @@
 ```bash
     # 克隆项目
     git clone https://github.com/zhenzhencai/vueAdminDemo.git
+    
+    #进入文件夹
+    cd ChinaVisProject
 
     # 安装依赖
     npm install
-    //or # 建议不要用cnpm  安装有各种诡异的bug 可以通过如下操作解决npm速度慢的问题
+    //or # 建议不要用cnpm  安装有各种诡异的bug 可以通过如下操作解决npm速度慢的问题
     npm install --registry=https://registry.npm.taobao.org
+    
+    cnpm install
+    
+    #这里需要添加echarts的两个主题文件，访问链接https://echarts.baidu.com/theme-builder/
+    #下载halloween.js主题文件，将这个文件放入node_modules/echarts/theme文件夹下
 
     # 本地开发 开启服务
     npm run dev
+
 ```
 
 
