@@ -1,5 +1,11 @@
 <template>
 <div class="table-container">
+  <el-row style="margin: 10px 0;">
+    <el-alert
+    title="抱歉，后台服务器已关闭，无法查询员工个人信息！"
+    type="error">
+  </el-alert>
+  </el-row>
   <el-row>
     <el-col :span="6" style="height:400px;border: #ccc 1px solid;">
       <div id="input">
