@@ -58,19 +58,13 @@
 
 ## 效果图
 第一题：
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/001.jpg)
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/002.jpg)
-
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/no1.png)
 
 第二题：
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/003.jpg)
-
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/no2.png)
 
 第三题：
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/004.jpg)
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/005.jpg)
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/006.jpg)
-![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/007.jpg)
+![](https://github.com/zhenzhencai/ChinaVisProject/blob/master/IMG/no3.png)
 
 ## 演示视频
 
