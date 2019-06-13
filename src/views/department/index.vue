@@ -7,21 +7,16 @@
         </el-col>
         <el-col :span="8" >
         <server></server>
-
         </el-col>
       </el-row>
       <el-row style="margin-top:10px;">
         <el-col :span="10">
           <checkdep></checkdep>
-
         </el-col>
         <el-col :span="14">
              <tcplog></tcplog>
         </el-col>
-
       </el-row>
-
-
       <el-row style="margin-top:10px;">
         <el-col :span="6">
              <webclass></webclass>
@@ -34,8 +29,6 @@
              <loginError></loginError>
         </el-col>
       </el-row>
-
-
       <el-row style="margin-top:10px;">
         <el-col :span="12" style="padding-right:10px;">
           <usaupload></usaupload>
@@ -44,15 +37,6 @@
           <databaseerror></databaseerror>
         </el-col>
       </el-row>
-
-
- <!-- <el-row style="margin-top:10px;">
-   <el-col :span="8" style="padding-right:10px;">
-     <playball></playball>
-
-   </el-col>
-
- </el-row> -->
 </div>
 </template>
 
@@ -68,13 +52,13 @@ import {
   Usaupload,
   Databaseerror,
   Playball
-} from '@/views/tree/components'
+} from '@/views/department/components'
 import echarts from 'echarts'
 require('echarts/theme/halloween')
 require('echarts-wordcloud')
 
 export default {
-  name: 'dashboard',
+  name: 'department',
   components: {
     Checktime,
     Server,
@@ -93,9 +77,7 @@ export default {
     }
   },
   methods: {},
-  watch: {
-
-  }
+  watch: {}
 }
 </script>
 

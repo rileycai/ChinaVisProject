@@ -3,9 +3,6 @@
   <el-row>
     <el-col :span="6" style="height:400px;border: #ccc 1px solid;">
       <div id="input">
-        <!-- <el-input placeholder="请输入内容" v-model="id" class="input-with-select">
-            <el-button type="warning" slot="append" icon="el-icon-search" ></el-button>
-          </el-input> -->
         <input v-model="id" placeholder="请输入员工编号">
         <button v-on:click="fetchData(id)">搜索一下</button>
       </div>
@@ -63,6 +60,7 @@ require('echarts-wordcloud')
 require('echarts/theme/halloween')
 
 export default {
+  name: 'personal',
   data() {
     return {
       chartWord: "",
@@ -84,8 +82,7 @@ export default {
   },
   created() {},
   methods: {
-    fetchData(params) {
-      //  console.log(params);
+    fetchData(params) {;
       if (params > 1000 && params < 1600) {
         var url = "/" + params;
         request({
@@ -113,15 +110,14 @@ export default {
             this.LoginParallel();
           }
 
+        }).catch( error => {
+          this.$message.error('抱歉，服务器已经关闭！');
         })
       } else {
         this.$message.error('请输入正确的id');
       }
 
     },
-
-
-
     domainWord(params) {
       var option = {
         title: {
@@ -424,14 +420,11 @@ export default {
 
 
     LoginParallel() {
-
       var url = "/login/" + this.id;
       request({
         url: url,
         method: 'get'
       }).then(response => {
-        // console.log(response);
-
         var option = {
           title: {
             text: "登录服务器平行坐标图",
@@ -628,15 +621,6 @@ export default {
         this.upDownFlow.setOption(option)
       })
     },
-
-
-
-
-
-
-
-
-
   }
 }
 </script>

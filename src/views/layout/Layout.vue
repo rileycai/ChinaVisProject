@@ -33,7 +33,6 @@ export default {
   position: relative;
   height: 100%;
   width: 100%;
-  // background-color: #f3f3f3;
   background-color: rgba(64, 64, 64, 0.5);
   background-image: url(../../assets/pumpkin.png);
 }

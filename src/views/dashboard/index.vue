@@ -6,22 +6,17 @@
       <el-row>
             <department></department>
       </el-row>
-
     </el-col>
     <el-col :span="18" style="padding-right:10px;" >
       <organization></organization>
-
     </el-col>
   </el-row>
-
-
-
 </div>
 </template>
 
 <script>
 import { Department,Employee,Organization,Emailrel } from '@/views/dashboard/components'
-import {Departmentcloudword} from '@/views/tree/components'
+import {Departmentcloudword} from '@/views/department/components'
 import echarts from 'echarts'
 
 
@@ -37,13 +32,9 @@ export default {
   },
   data() {
     return {
-
-
     }
   },
   mounted: function() {
-
-
   }
 }
 </script>

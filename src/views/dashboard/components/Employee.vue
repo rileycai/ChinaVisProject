@@ -1298,29 +1298,6 @@ export default {
           },
           top: '10%',
           bottom: '1%',
-          // label: {
-          //   normal: {
-          //     position: 'top',
-          //     rotate: 0,
-          //     verticalAlign: 'middle',
-          //     align: 'middle',
-          //     fontSize: 9
-          //   }
-          // },
-          //
-          // leaves: {
-          //   label: {
-          //     normal: {
-          //       position: 'bottom',
-          //       rotate: -45,
-          //       verticalAlign: 'middle',
-          //       align: 'left',
-          //       fontSize: 6
-          //     }
-          //   }
-          // },
-
-
         }]
       }
 

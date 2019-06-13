@@ -22,9 +22,6 @@ import Layout from '../views/layout/Layout'
   }
 **/
 export const constantRouterMap = [
-  { path: '/login', component: () => import('@/views/login/index'), hidden: true },
-  { path: '/404', component: () => import('@/views/404'), hidden: true },
-
   {
     path: '/',
     component: Layout,
@@ -45,33 +42,19 @@ export const constantRouterMap = [
     meta: { title: '分析', icon: 'example' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
+        path: 'personal',
+        name: 'Personal',
+        component: () => import('@/views/personal/index'),
         meta: { title: '个人', icon: 'table' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
+        path: 'department',
+        name: 'Department',
+        component: () => import('@/views/department/index'),
         meta: { title: '部门', icon: 'tree' }
       }
     ]
   },
-
-  // {
-  //   path: '/form',
-  //   component: Layout,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'Form',
-  //       component: () => import('@/views/form/index'),
-  //       meta: { title: '图标', icon: 'form' }
-  //     }
-  //   ]
-  // },
-
   { path: '*', redirect: '/404', hidden: true }
 ]
 

@@ -9,7 +9,6 @@ import echarts from 'echarts'
 
 require('echarts/theme/halloween')
 
-
 export default {
   name: 'Department',
   data() {
@@ -18,7 +17,6 @@ export default {
     }
   },
   mounted: function() {
-
     function colorMappingChange(value) {
       var levelOption = getLevelOption(value);
       chart.setOption({
