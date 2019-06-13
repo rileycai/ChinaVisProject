@@ -1,5 +1,13 @@
 <template>
 <div class="dashboard-container">
+  <el-row style="margin: 10px 0;">
+        <el-alert
+          title="提示：点击员工节点可显示该员工的邮件收发词云图信息"
+          type="warning"
+          center
+          show-icon>
+        </el-alert>
+  </el-row>
   <departmentcloudword></departmentcloudword>
   <el-row style="margin-top:10px;">
     <el-col :span="6" >
