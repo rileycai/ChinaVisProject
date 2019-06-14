@@ -12,6 +12,9 @@
   <a href="https://github.com/vuejs/vue">
     <img src="https://img.shields.io/badge/vue-2.5.10-brightgreen.svg" alt="vue">
   </a>
+  <a href="https://echarts.baidu.com/">
+    <img src="https://img.shields.io/badge/echarts-4.1.0-brightgreen.svg" alt="echarts">
+  </a>
   <a href="https://github.com/ElemeFE/element">
     <img src="https://img.shields.io/badge/element--ui-2.0.8-brightgreen.svg" alt="element-ui">
   </a>
@@ -24,7 +27,7 @@
  后台服务已关闭
    
 ## 技术栈
-    vue2 + vuex + vue-router + webpack + axios + element-UI + Mock.js + ECharts + D3.js + Tableau
+    vue2 + vuex + vue-router + webpack + axios + element-UI + ECharts + Tableau
 
 ## 开发
 ```bash
